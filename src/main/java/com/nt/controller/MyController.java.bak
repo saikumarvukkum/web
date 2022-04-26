@@ -13,9 +13,9 @@ public class MyController implements org.springframework.web.servlet.mvc.Control
 
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		Date d=new Date();
+		Date dt=new Date();
 		
-		return new ModelAndView("home","sysDate",d);
+		return new ModelAndView("home","sysDate",dt);
 	}
 
 }
